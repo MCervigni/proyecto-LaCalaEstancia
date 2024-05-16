@@ -164,6 +164,22 @@ main video {
 
 /* END ACTIVIDADES */
 
+/* GALERIA */
+
+.galeria .col-lg-4 {
+  padding: 2.3rem;
+}
+
+.galeria img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.galeria img:hover {
+  border: 5px solid white;
+}
+
 /* UBICACION */
 
 .ubicacion {
@@ -300,7 +316,7 @@ input[type="submit"]{
 .icon-whatsapp img {
   width: 3.5rem;
   position: fixed;
-  bottom: 4.5rem;
+  bottom: 4.8rem;
   right: 2rem;
 }
 
@@ -418,6 +434,7 @@ input[type="submit"]{
     #side-menu li {
       margin: 1rem 0;
     }
+
 /* MAIN SHARED Tablet-Mobile */
 
     .titulo-seccion {
