@@ -571,8 +571,6 @@ textarea {
     }
   
     .footer-container {
-      position: fixed;
-      bottom: 0;
       display: flex;
     }
   
@@ -635,14 +633,11 @@ body {
   }
   
   .card-actividad {
-    flex-direction: column;
+
     font-size: 1rem;
   }
     
-  .card-actividad p {
-    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
-    text-align: center;
-  }
+  
 
 
   /* MAIN UBICACION Mobile */

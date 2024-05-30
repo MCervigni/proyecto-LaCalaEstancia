@@ -1,0 +1,53 @@
+footer {
+  margin-top: auto;
+  /* Whatsapp */
+
+  .icon-whatsapp img {
+    width: 3.5rem;
+    position: fixed;
+    bottom: 4.8rem;
+    right: 2rem;
+    @include tablet {
+      width: 2.5rem;
+    }
+    @include mobile {
+      width: 2rem;
+    }
+  }
+
+  /* FOOTER */
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    background-color: #6c8a5b;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    @include tablet {
+      display: flex;
+    }
+    .footer-info {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      @include tablet {
+        font-size: 0.6rem;
+        display: block;
+        width: 100%;
+      }
+    }
+    .footer-redes {
+      display: flex;
+      a {
+        color: #f0eee6;
+        font-size: 2rem;
+        margin: auto 20px;
+        @include tablet {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
