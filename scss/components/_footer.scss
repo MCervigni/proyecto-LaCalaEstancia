@@ -21,7 +21,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    background-color: #6c8a5b;
+    background-color: $color-green;
     justify-content: space-between;
     width: 100%;
     padding: 0.8rem 1.2rem;
@@ -29,8 +29,7 @@ footer {
       display: flex;
     }
     .footer-info {
-      display: flex;
-      flex-direction: column;
+      @include flex(column, inherit, inherit, inherit);
       width: 100%;
       @include tablet {
         font-size: 0.6rem;
@@ -41,7 +40,7 @@ footer {
     .footer-redes {
       display: flex;
       a {
-        color: #f0eee6;
+        color: $color-light;
         font-size: 2rem;
         margin: auto 20px;
         @include tablet {

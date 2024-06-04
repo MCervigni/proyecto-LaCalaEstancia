@@ -5,15 +5,11 @@
   padding: 1.5rem 5rem 0.5rem 5rem;
   z-index: 100;
   @include tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, space-between, center, inherit);
     padding: 1rem 2.5rem;
   }
   .header-desk {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, space-between, center, inherit);
     @include tablet {
       display: block;
     }
@@ -24,7 +20,7 @@
       font-style: normal;
       font-size: 1.8rem;
       text-align: center;
-      color: #363633;
+      color: $color-dark;
       @include mobile {
         font-size: 1.1rem;
       }
@@ -43,19 +39,18 @@
         width: 100%;
       }
       .menu-header {
-        display: flex;
-        justify-content: space-between;
+        @include flex(row, space-between, inherit, inherit);
         li {
           a {
             text-decoration: none;
-            color: #363633;
+            color: $color-dark;
             font-size: 1.2rem;
             font-weight: 500;
             padding: 1.6rem;
           }
-          #btn-reservas {
-            color: #f0eee6;
-            background-color: #5c754e;
+          .btn-reservas {
+            color: $color-light;
+            background-color: $color-green;
             padding: 8px 16px;
             border-radius: 4px;
           }
@@ -72,13 +67,11 @@
   @include tablet {
     width: 3rem;
     height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include flex(column, space-around, inherit, inherit);
     span {
       width: 3rem;
       height: 3px;
-      background-color: #363633;
+      background-color: $color-dark;
     }
   }
 }
@@ -92,7 +85,7 @@
     font-style: normal;
     font-size: 1.8rem;
     text-align: center;
-    color: #363633;
+    color: $color-dark;
     @include mobile {
       font-size: 1.1rem;
     }
@@ -121,30 +114,26 @@
     }
 
     #header-a {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex(row, space-between, center, inherit);
       padding: 1rem 2.5rem 0 2.5rem;
     }
     ul {
       list-style: none;
       margin: 0;
       padding: 4rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex(column, inherit, center, inherit);
     }
     a {
-      color: #363633;
+      color: $color-dark;
       text-decoration: none;
       font-size: 1.5rem;
       @include mobile {
         font-size: 1.3rem;
       }
     }
-    #btn-reservas {
-      color: #f0eee6;
-      background-color: #5c754e;
+    .btn-reservas {
+      color: $color-light;
+      background-color: $color-green;
       padding: 8px 16px;
       border-radius: 4px;
     }

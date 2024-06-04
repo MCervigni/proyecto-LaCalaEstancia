@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+.reservas .formulario form textarea, .reservas .formulario form input {
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid lightgrey;
+  margin: 0.6rem 0;
+  font-size: 1.2rem;
+  outline: none;
+}
+
 html {
   height: 100%;
 }
@@ -16,6 +26,9 @@ body {
   color: #363633;
   display: flex;
   flex-direction: column;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
   min-height: 100%;
 }
 
@@ -57,15 +70,19 @@ ul {
 @media screen and (max-width: 1126px) {
   .header-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: inherit;
     padding: 1rem 2.5rem;
   }
 }
 .header-container .header-desk {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: inherit;
 }
 @media screen and (max-width: 1126px) {
   .header-container .header-desk {
@@ -104,7 +121,10 @@ ul {
 }
 .header-container .header-desk nav .menu-header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: inherit;
+  flex-wrap: inherit;
 }
 .header-container .header-desk nav .menu-header li a {
   text-decoration: none;
@@ -113,7 +133,7 @@ ul {
   font-weight: 500;
   padding: 1.6rem;
 }
-.header-container .header-desk nav .menu-header li #btn-reservas {
+.header-container .header-desk nav .menu-header li .btn-reservas {
   color: #f0eee6;
   background-color: #5c754e;
   padding: 8px 16px;
@@ -132,6 +152,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: inherit;
+    flex-wrap: inherit;
   }
   .menu-btn span {
     width: 3rem;
@@ -184,8 +206,10 @@ ul {
   }
   #side-menu #header-a {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: inherit;
     padding: 1rem 2.5rem 0 2.5rem;
   }
   #side-menu ul {
@@ -194,7 +218,9 @@ ul {
     padding: 4rem 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: inherit;
     align-items: center;
+    flex-wrap: inherit;
   }
   #side-menu a {
     color: #363633;
@@ -208,7 +234,7 @@ ul {
   }
 }
 @media screen and (max-width: 1126px) {
-  #side-menu #btn-reservas {
+  #side-menu .btn-reservas {
     color: #f0eee6;
     background-color: #5c754e;
     padding: 8px 16px;
@@ -271,7 +297,7 @@ main .presentacion-text {
   font-weight: 600;
   text-transform: uppercase;
   background-color: #363633;
-  color: #f8f8f6;
+  color: #f0eee6;
   text-align: center;
   font-size: 1.25rem;
   padding: 0.9rem 0;
@@ -305,7 +331,10 @@ main .presentacion-text {
 
 .card-actividad {
   display: flex;
+  flex-direction: row;
+  justify-content: inherit;
   align-items: center;
+  flex-wrap: inherit;
   font-size: 1.25rem;
 }
 @media screen and (max-width: 1126px) {
@@ -316,7 +345,7 @@ main .presentacion-text {
 }
 @media screen and (max-width: 768px) {
   .card-actividad {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 .card-actividad img {
@@ -336,6 +365,11 @@ main .presentacion-text {
   .card-actividad p {
     margin: 0.5rem 1.5rem 1.5rem 1.5rem;
     text-align: center;
+  }
+}
+@media screen and (max-width: 1126px) and (max-width: 768px) {
+  .card-actividad p {
+    margin: 0.5rem;
   }
 }
 
@@ -499,8 +533,11 @@ main .presentacion-text {
 }
 .reservas .info-contacto #redes {
   display: flex;
-  width: 40%;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: inherit;
+  width: 40%;
 }
 .reservas .info-contacto #redes li {
   padding: 1rem;
@@ -528,8 +565,10 @@ main .presentacion-text {
 }
 .reservas .formulario form {
   display: flex;
-  align-items: baseline;
   flex-direction: column;
+  justify-content: inherit;
+  align-items: baseline;
+  flex-wrap: inherit;
 }
 @media screen and (max-width: 1126px) {
   .reservas .formulario form label {
@@ -541,15 +580,6 @@ main .presentacion-text {
   .reservas .formulario form label {
     font-size: 0.8rem;
   }
-}
-.reservas .formulario form input {
-  width: 80%;
-  padding: 0.8rem;
-  border-radius: 8px;
-  border: 1px solid lightgrey;
-  margin: 0.6rem 0;
-  font-size: 1.2rem;
-  outline: none;
 }
 @media screen and (max-width: 1126px) {
   .reservas .formulario form input {
@@ -568,14 +598,8 @@ main .presentacion-text {
   font-weight: 400;
 }
 .reservas .formulario form textarea {
-  width: 80%;
-  height: 9rem;
-  padding: 0.8rem;
-  border-radius: 8px;
-  border: 1px solid lightgrey;
-  margin: 0.6rem 0;
-  font-size: 1.2rem;
   outline: none;
+  height: 9rem;
 }
 @media screen and (max-width: 1126px) {
   .reservas .formulario form textarea {
@@ -597,9 +621,10 @@ main .presentacion-text {
 .reservas .formulario form .reserva {
   width: 100%;
   display: flex;
-  align-items: baseline;
   flex-direction: row;
-  justify-content: center;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-wrap: inherit;
 }
 @media screen and (max-width: 768px) {
   .reservas .formulario form .reserva {
@@ -658,7 +683,7 @@ footer .footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  background-color: #6c8a5b;
+  background-color: #5c754e;
   justify-content: space-between;
   width: 100%;
   padding: 0.8rem 1.2rem;
@@ -671,6 +696,9 @@ footer .footer-container {
 footer .footer-container .footer-info {
   display: flex;
   flex-direction: column;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
   width: 100%;
 }
 @media screen and (max-width: 1126px) {
