@@ -57,6 +57,10 @@
           @include tablet {
             display: none;
           }
+          &:hover {
+            transform: scale(1.05);
+            transition: 40ms;
+          }
         }
       }
     }
@@ -139,6 +143,10 @@
     }
     li {
       margin: 1rem 0;
+      &:hover {
+        transform: scale(1.05);
+        transition: 40ms;
+      }
     }
   }
 }

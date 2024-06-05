@@ -150,6 +150,10 @@
       color: $color-light;
       font-weight: bold;
       width: auto;
+      &:hover {
+        transform: scale(1.05);
+        transition: 40ms;
+      }
     }
   }
 }
