@@ -1,29 +1,85 @@
-main {
-  text-align: center;
-  video {
-    width: 80dvw;
-    @include tablet {
-      width: 90dvw;
-    }
-    @include mobile {
-      width: 100dvw;
-      margin-top: 4rem;
-    }
-  }
-
-  .presentacion-text {
-    font-size: 1.5rem;
-    margin: 0 5rem 1.5rem 5rem;
+#parallax-image {
+  background-image: url(/assets/img/bg-image.jpg);
+  height: 40rem;
+  margin-bottom: 5rem;
+  background-attachment: fixed;
+  background-position: 65% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p {
     font-family: $tipografia-secundaria;
-    font-weight: 400;
+    color: $color-letter-seccions;
+    text-shadow: 1px 1px 1px $color-dark;
+    font-size: 2.5rem;
     font-style: italic;
-    color: $color-dark;
     @include tablet {
-      font-size: 1.3rem;
-      margin: 0.5rem 3rem;
+      font-size: 2rem;
     }
     @include mobile {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 }
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.texto-home-hab-act {
+  @include tablet {
+    font-size: 1.2rem;
+  }
+  @include mobile {
+    font-size: 0.9rem;
+  }
+}
+
+.carousel-item {
+  img {
+    max-height: 400px;
+    width: auto;
+  }
+}
+
+#parallax-image2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(111, 146, 118, 0.274),
+      rgba(73, 100, 79, 0.384)
+    ),
+    url("/assets/img/image-bg2.jpg");
+  height: 20rem;
+  margin-bottom: 5rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p {
+    font-family: $tipografia-secundaria;
+    color: $color-letter-seccions;
+    text-shadow: 1px 1px 1px $color-dark;
+    font-size: 2rem;
+    font-style: italic;
+  }
+}
+
+.lander-page-2bg {
+  margin: 2rem 0;
+}
+
+// .presentacion-text {
+//   font-size: 1.5rem;
+//   margin: 0 5rem 1.5rem 5rem;
+//   font-family: $tipografia-secundaria;
+//   font-weight: 400;
+//   font-style: italic;
+//   color: $color-dark;
+//   @include tablet {
+//     font-size: 1.3rem;
+//     margin: 0.5rem 3rem;
+//   }
+//   @include mobile {
+//     font-size: 1rem;
+//   }
+// }

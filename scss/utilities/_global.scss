@@ -8,6 +8,7 @@ body {
   font-family: $tipografia-general;
   font-weight: 400;
   font-style: normal;
+  background-color: $color-light;
   color: $color-dark;
   @include flex(column, inherit, inherit, inherit);
   min-height: 100%;
