@@ -335,6 +335,16 @@ h2 {
   font-size: 2rem;
   font-style: italic;
 }
+@media screen and (max-width: 1126px) {
+  #parallax-image2 p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #parallax-image2 p {
+    font-size: 1.3rem;
+  }
+}
 
 .lander-page-2bg {
   margin: 2rem 0;
