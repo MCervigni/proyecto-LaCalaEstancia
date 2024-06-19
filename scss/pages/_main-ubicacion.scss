@@ -36,7 +36,7 @@
 
   h3 {
     margin-top: 3rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
     @include tablet {
       margin-top: 1.2rem;
       margin-bottom: 1rem;
@@ -50,6 +50,7 @@
   }
 
   .distancias {
+    margin-bottom: 2.5rem;
     @include tablet {
       font-size: 1rem;
     }

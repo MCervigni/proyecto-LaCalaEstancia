@@ -1,29 +1,60 @@
-#parallax-image {
-  background-image: url(/assets/img/bg-image.jpg);
-  height: 40rem;
-  margin-bottom: 5rem;
-  background-attachment: fixed;
-  background-position: 65% 35%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  p {
-    font-family: $tipografia-secundaria;
-    color: $color-letter-seccions;
-    text-shadow: 1px 1px 1px $color-dark;
-    font-size: 2.5rem;
-    font-style: italic;
-    @include tablet {
+.lander-page {
+  #parallax-image {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.45)
+      ),
+      url(../assets/img/home-bg-parallax1.jpg);
+    animation: show-presentation 2s ease;
+    height: 40rem;
+    margin-bottom: 2rem;
+    background-attachment: fixed;
+    background-position: 65% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    p {
+      font-family: $tipografia-secundaria;
+      color: whitesmoke;
+      text-shadow: 1px 1px 1px rgb(0, 0, 0);
       font-size: 2rem;
-    }
-    @include mobile {
-      font-size: 1.5rem;
+      font-style: italic;
+      animation: show 3s ease;
+      @include tablet {
+        font-size: 2rem;
+      }
+      @include mobile {
+        font-size: 1.5rem;
+      }
     }
   }
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hab-main-page {
+  margin-bottom: 3rem;
+  .btn-hab-act {
+    text-decoration: none;
+    @extend %btn;
+    background-color: $color-dark;
+    font-size: 1rem;
+    &:hover {
+      background-color: rgba($color: $color-dark, $alpha: 0.8);
+    }
+    @include tablet {
+      font-size: 0.8rem;
+    }
+    @include mobile {
+      font-size: 0.6rem;
+    }
+  }
 }
 
 .texto-home-hab-act {
@@ -37,39 +68,67 @@ h2 {
 
 .carousel-item {
   img {
-    max-height: 400px;
+    max-height: 370px;
     width: auto;
+    position: relative;
   }
-}
-
-#parallax-image2 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(111, 146, 118, 0.274),
-      rgba(73, 100, 79, 0.384)
-    ),
-    url("/assets/img/image-bg2.jpg");
-  height: 20rem;
-  margin-bottom: 5rem;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  p {
-    font-family: $tipografia-secundaria;
-    color: $color-letter-seccions;
-    text-shadow: 1px 1px 1px $color-dark;
-    font-size: 2rem;
-    font-style: italic;
-    @include tablet {
-      font-size: 1.8rem;
-    }
-    @include mobile {
-      font-size: 1.3rem;
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
   }
-}
 }
 
 .lander-page-2bg {
-  margin: 2rem 0;
+  #parallax-image2 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(../assets/img/home-parallax2.jpg);
+    height: 20rem;
+    margin-bottom: 5rem;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    p {
+      font-family: $tipografia-secundaria;
+      color: $color-letter-seccions;
+      text-shadow: 1px 1px 1px $color-dark;
+      font-size: 2rem;
+      font-style: italic;
+      @include tablet {
+        font-size: 1.8rem;
+      }
+      @include mobile {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.act-main-page {
+  background-color: $color-back-seccions;
+  padding: 2rem;
+  .btn-hab-act {
+    text-decoration: none;
+    @extend %btn;
+    background-color: $color-dark;
+    font-size: 1rem;
+    &:hover {
+      background-color: rgba($color: $color-dark, $alpha: 0.8);
+    }
+    @include tablet {
+      font-size: 0.8rem;
+    }
+    @include mobile {
+      font-size: 0.6rem;
+    }
+  }
 }

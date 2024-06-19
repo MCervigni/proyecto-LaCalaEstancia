@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./assets/icon/favicon.ico" type="image/x-icon">
     <title>La Cala - Estancia Serrana</title>
   </head>
   <body>
@@ -100,7 +101,7 @@
           <div class="row m-3 align-items-center">
             <h2>Nuestras Habitaciones</h2>
             <div class="col-md-6">
-              <div id="carousel-habitaciones" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div id="carousel-habitaciones" class="carousel carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel-habitaciones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel-habitaciones" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -114,6 +115,7 @@
                       <h5><b>Habitación Laurel</b></h5>
                       <p><b>4 </b><i class="fa-solid fa-person"></i> - Estilo Rústico</p>
                     </div>
+                    <div class="overlay"></div>
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
                     <img src="./assets/img/habitaciones/habitacion_lapacho.jpg" class="d-block w-100" alt="Foto Habitación Lapacho">
@@ -121,6 +123,7 @@
                       <h5><b>Habitación Lapacho</b></h5>
                       <p><b>3 </b><i class="fa-solid fa-person"></i> - Estilo Autóctono</p>
                     </div>
+                    <div class="overlay"></div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <img src="./assets/img/habitaciones/habitacion_quebracho.jpg" class="d-block w-100" alt="Foto Habitación Quebracho">
@@ -148,11 +151,12 @@
               </div>
             </div>
             <div class="col-md-6 fs-5 text-center">
-              <p class="texto-home-hab-act">La casona, de estilo colonial, consta del casco central: amplio
-                comedor y sala de estar, y 4 habitaciones perfectamente
-                adaptadas para disfrutarlas en cualquier época del año; todas
-                cuentan con vista a las sierras o al cálido patio interno de la
-                estancia.</p>
+              <p class="texto-home-hab-act">La casona consta del casco central con amplio
+                comedor y sala de estar, compatidos, sumado a las cuatro habitaciones con baños privados. Perfectamente
+                adaptadas para disfrutarlas en cualquier época del año; cuentan con vista a las sierras o al cálido patio interno de la
+                estancia. Diseñadas con todo el confort, respetando el estilo colonial típico de la Estancia, las habitaciones están decoradas con inspiración en distintos árboles autóctonos de la zona. </p>
+                <a class="btn-hab-act p-1" href="./pages/habitaciones.html">Ver más</a>
+
             </div>
           </div>
         </div>
@@ -166,7 +170,7 @@
           <div class="row h-100 align-items-center">
             <div class="col-md-12 text-center">
               <p class="text-white">
-                Explora en las sierras de los Comechingones
+                Animate a explorar las Sierras de los Comechingones
               </p>
             </div>
           </div>
@@ -174,16 +178,18 @@
       </div>
       </section>
       <!-- SECOND BG HOME SECTION -->
+
      <!-- ACT HOME SECTION -->
      <section class="act-main-page">
       <div class="container">
         <div class="row m-3 align-items-center">
           <h2>Nuestras Actividades</h2>
           <div class="col-md-6 fs-5 text-center">
-            <p class="texto-home-hab-act">Contamos con diversas actividades para que puedas explorar al máximo las sierras que rodean la estancia. Pensadas para el contacto con la naturaleza, te invitamos a aventurarte y a vivir momentos únicos.</p>
+            <p class="texto-home-hab-act">Ofrecemos diversas actividades para que puedas disfrutar al máximo de las sierras que rodean la estancia. Pensadas para el contacto con la naturaleza, te invitamos a aventurarte y a vivir momentos únicos. Contamos con experiencias con distintos niveles de dificultad, para que todas las personas que nos visiten puedan explorar nuestro maravillo entorno serrano.</p>
+            <a class="btn-hab-act p-1" href="./pages/actividades.html">Ver más</a>
           </div>
           <div class="col-md-6">
-            <div id="carousel-actividades" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div id="carousel-actividades" class="carousel carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-actividades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel-actividades" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -225,11 +231,12 @@
      <!-- END ACT HOME SECTION -->
 
     <!-- END MAIN -->
+
 <!-- FOOTER -->
     <footer>
       <!-- whatsapp Icon -->
       <a class="icon-whatsapp" href="https://web.whatsapp.com/" target="_blank"
-        ><img src="./assets/img/icon_whatsapp.ico" alt=""></i
+        ><img src="./assets/icon/icon_whatsapp.ico" alt="icono Whatsapp"></i
       ></a>
       <!-- Footer Info -->
       <section class="footer-container">

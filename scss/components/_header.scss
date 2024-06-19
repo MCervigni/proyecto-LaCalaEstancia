@@ -4,6 +4,7 @@
   top: 0;
   padding: 0.5rem 5rem;
   z-index: 100;
+  // animation: show-header 1s ease;
   @include tablet {
     @include flex(row, space-between, center, inherit);
     padding: 1rem 2.5rem;
@@ -17,6 +18,9 @@
       @include flex(column, space-between, center, inherit);
       h1 {
         font-size: 1.7rem;
+        @include mobile {
+          font-size: 1.1rem;
+        }
       }
       font-family: $tipografia-logo;
       font-optical-sizing: auto;
@@ -25,9 +29,6 @@
       font-size: 1.7rem;
       text-align: center;
       color: $color-dark;
-      @include mobile {
-        font-size: 1.1rem;
-      }
       img {
         width: 13rem;
         @include mobile {
@@ -48,24 +49,22 @@
             font-size: 1.2rem;
             font-weight: 500;
             padding: 1.6rem;
+            transition: 40ms;
             &:hover {
               color: $color-green;
             }
           }
 
           .btn-reservas {
-            color: $color-light;
-            background-color: $color-green;
-            padding: 8px 16px;
-            border-radius: 4px;
+            @extend %btn;
             &:hover {
               color: $color-light;
-              background-color: $color-dark;
-            }
+              background-color: $color-dark; 
           }
+        }
           &:hover {
             transform: scale(1.05);
-            transition: 40ms;
+            
           }
           @include tablet {
             display: none;
@@ -94,12 +93,15 @@
   .logo {
     h1 {
       font-size: 0.5rem;
+      @include mobile {
+        font-size: 1.1rem;
+      }
     }
     font-family: $tipografia-logo;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    
+
     text-align: center;
     color: $color-dark;
     @include mobile {
@@ -142,20 +144,21 @@
           text-decoration: none;
           font-size: 1.5rem;
           transition: 40ms;
+          @include mobile {
+            font-size: 1.3rem;
+          }
         }
         &:hover {
           transform: scale(1.05);
           color: $color-green;
-          @include mobile {
-            font-size: 1.3rem;
-          }
         }
       }
       .btn-reservas {
         color: $color-light;
         background-color: $color-green;
-        padding: 8px 16px;
+        padding: 0.6rem 1rem;
         border-radius: 4px;
+        box-shadow: 1px 1px (rgba($color: $color-dark, $alpha: 0.5));
         transition: 40ms;
         &:hover {
           color: $color-light;

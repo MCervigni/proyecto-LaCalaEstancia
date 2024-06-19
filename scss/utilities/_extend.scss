@@ -7,3 +7,15 @@
   font-size: 1.2rem;
   outline: none;
 }
+
+%btn {
+  color: $color-light;
+  background-color: $color-green;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  box-shadow: 1px 1px (rgba($color: $color-dark, $alpha: 0.5));
+  &:hover {
+    color: $color-light;
+    background-color: $color-dark;
+  }
+}

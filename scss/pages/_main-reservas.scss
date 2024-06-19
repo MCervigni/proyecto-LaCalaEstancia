@@ -15,7 +15,8 @@
     display: block;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     @include tablet {
       font-size: 1.2rem;
       margin: 1.2rem;
@@ -31,6 +32,8 @@
     li h4 {
       font-size: 1.2rem;
       margin-top: 2rem;
+      font-weight: bold;
+
       @include tablet {
         display: none;
         font-size: 1rem;
