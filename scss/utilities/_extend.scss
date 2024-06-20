@@ -19,3 +19,11 @@
     background-color: $color-dark;
   }
 }
+
+%txt-parallax {
+  font-family: $tipografia-secundaria;
+  color: whitesmoke;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+  font-size: 2rem;
+  font-style: italic;
+}

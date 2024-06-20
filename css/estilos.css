@@ -15,16 +15,24 @@
   outline: none;
 }
 
-.act-main-page .btn-hab-act, .hab-main-page .btn-hab-act, .header-container .header-desk nav .menu-header li .btn-reservas {
+.btn-hab-act, .header-container .header-desk nav .menu-header li .btn-reservas {
   color: #f0eee6;
   background-color: #5c754e;
   padding: 0.6rem 1rem;
   border-radius: 4px;
   box-shadow: 1px 1px rgba(54, 54, 51, 0.5);
 }
-.act-main-page .btn-hab-act:hover, .hab-main-page .btn-hab-act:hover, .header-container .header-desk nav .menu-header li .btn-reservas:hover {
+.btn-hab-act:hover, .header-container .header-desk nav .menu-header li .btn-reservas:hover {
   color: #f0eee6;
   background-color: #363633;
+}
+
+.lander-page-2bg #parallax-image2 p, .lander-page #parallax-image p {
+  font-family: "Barlow", sans-serif;
+  color: whitesmoke;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+  font-size: 2rem;
+  font-style: italic;
 }
 
 html {
@@ -78,21 +86,9 @@ ul {
     opacity: 0.2;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../assets/img/home-bg-parallax1.jpg);
   }
-  25% {
-    opacity: 0.4;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125)), url(../assets/img/home-bg-parallax1.jpg);
-  }
-  50% {
-    opacity: 0.6;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25)), url(../assets/img/home-bg-parallax1.jpg);
-  }
-  75% {
-    opacity: 0.8;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.37)), url(../assets/img/home-bg-parallax1.jpg);
-  }
   100% {
     opacity: 1;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url(../assets/img/home-bg-parallax1.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../assets/img/home-bg-parallax1.jpg);
   }
 }
 @keyframes show {
@@ -153,11 +149,11 @@ ul {
   color: #363633;
 }
 .header-container .header-desk .logo h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 @media screen and (max-width: 768px) {
   .header-container .header-desk .logo h1 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
 .header-container .header-desk .logo img {
@@ -330,12 +326,13 @@ ul {
   background-size: cover;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .lander-page #parallax-image {
+    background-position: center;
+    height: 40rem;
+  }
+}
 .lander-page #parallax-image p {
-  font-family: "Barlow", sans-serif;
-  color: whitesmoke;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  font-size: 2rem;
-  font-style: italic;
   animation: show 3s ease;
 }
 @media screen and (max-width: 1126px) {
@@ -357,25 +354,7 @@ h2 {
 }
 
 .hab-main-page {
-  margin-bottom: 3rem;
-}
-.hab-main-page .btn-hab-act {
-  text-decoration: none;
-  background-color: #363633;
-  font-size: 1rem;
-}
-.hab-main-page .btn-hab-act:hover {
-  background-color: rgba(54, 54, 51, 0.8);
-}
-@media screen and (max-width: 1126px) {
-  .hab-main-page .btn-hab-act {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hab-main-page .btn-hab-act {
-    font-size: 0.6rem;
-  }
+  margin: 4rem 0;
 }
 
 @media screen and (max-width: 1126px) {
@@ -386,6 +365,26 @@ h2 {
 @media screen and (max-width: 768px) {
   .texto-home-hab-act {
     font-size: 0.9rem;
+  }
+}
+
+.btn-hab-act {
+  text-decoration: none;
+  background-color: #363633;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.btn-hab-act:hover {
+  background-color: rgba(54, 54, 51, 0.8);
+}
+@media screen and (max-width: 1126px) {
+  .btn-hab-act {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn-hab-act {
+    font-size: 0.7rem;
   }
 }
 
@@ -407,18 +406,15 @@ h2 {
 .lander-page-2bg #parallax-image2 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../assets/img/home-parallax2.jpg);
   height: 20rem;
-  margin-bottom: 5rem;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.lander-page-2bg #parallax-image2 p {
-  font-family: "Barlow", sans-serif;
-  color: #f8f8f6;
-  text-shadow: 1px 1px 1px #363633;
-  font-size: 2rem;
-  font-style: italic;
+@media screen and (max-width: 768px) {
+  .lander-page-2bg #parallax-image2 {
+    height: 15rem;
+  }
 }
 @media screen and (max-width: 1126px) {
   .lander-page-2bg #parallax-image2 p {
@@ -427,31 +423,17 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .lander-page-2bg #parallax-image2 p {
+    background-attachment: scroll;
     font-size: 1.3rem;
   }
 }
 
 .act-main-page {
+  margin: 4rem 0;
+}
+.act-main-page .container {
   background-color: #c0b27e;
   padding: 2rem;
-}
-.act-main-page .btn-hab-act {
-  text-decoration: none;
-  background-color: #363633;
-  font-size: 1rem;
-}
-.act-main-page .btn-hab-act:hover {
-  background-color: rgba(54, 54, 51, 0.8);
-}
-@media screen and (max-width: 1126px) {
-  .act-main-page .btn-hab-act {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .act-main-page .btn-hab-act {
-    font-size: 0.6rem;
-  }
 }
 
 .card-body {

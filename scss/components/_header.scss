@@ -17,9 +17,9 @@
     .logo {
       @include flex(column, space-between, center, inherit);
       h1 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         @include mobile {
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
       }
       font-family: $tipografia-logo;

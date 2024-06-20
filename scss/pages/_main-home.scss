@@ -14,12 +14,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    @include mobile {
+    background-position: center;
+    height: 40rem;
+    }
     p {
-      font-family: $tipografia-secundaria;
-      color: whitesmoke;
-      text-shadow: 1px 1px 1px rgb(0, 0, 0);
-      font-size: 2rem;
-      font-style: italic;
+      @extend %txt-parallax;
       animation: show 3s ease;
       @include tablet {
         font-size: 2rem;
@@ -39,32 +39,33 @@ h2 {
 }
 
 .hab-main-page {
-  margin-bottom: 3rem;
+  margin: 4rem 0;
+}
+  .texto-home-hab-act {
+    @include tablet {
+      font-size: 1.2rem;
+    }
+    @include mobile {
+      font-size: 0.9rem;
+    }
+  }
   .btn-hab-act {
     text-decoration: none;
     @extend %btn;
     background-color: $color-dark;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
     &:hover {
       background-color: rgba($color: $color-dark, $alpha: 0.8);
     }
     @include tablet {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
     @include mobile {
-      font-size: 0.6rem;
+      font-size: 0.7rem;
     }
   }
-}
 
-.texto-home-hab-act {
-  @include tablet {
-    font-size: 1.2rem;
-  }
-  @include mobile {
-    font-size: 0.9rem;
-  }
-}
 
 .carousel-item {
   img {
@@ -92,21 +93,20 @@ h2 {
       ),
       url(../assets/img/home-parallax2.jpg);
     height: 20rem;
-    margin-bottom: 5rem;
     background-attachment: fixed;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @include mobile {
+      height: 15rem;
+    }
     p {
-      font-family: $tipografia-secundaria;
-      color: $color-letter-seccions;
-      text-shadow: 1px 1px 1px $color-dark;
-      font-size: 2rem;
-      font-style: italic;
+      @extend %txt-parallax;
       @include tablet {
         font-size: 1.8rem;
       }
       @include mobile {
+        background-attachment:scroll;
         font-size: 1.3rem;
       }
     }
@@ -114,21 +114,9 @@ h2 {
 }
 
 .act-main-page {
-  background-color: $color-back-seccions;
-  padding: 2rem;
-  .btn-hab-act {
-    text-decoration: none;
-    @extend %btn;
-    background-color: $color-dark;
-    font-size: 1rem;
-    &:hover {
-      background-color: rgba($color: $color-dark, $alpha: 0.8);
-    }
-    @include tablet {
-      font-size: 0.8rem;
-    }
-    @include mobile {
-      font-size: 0.6rem;
-    }
+  margin: 4rem 0;
+  .container {
+    background-color: $color-back-seccions;
+    padding: 2rem;
   }
 }
