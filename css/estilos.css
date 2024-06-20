@@ -869,6 +869,7 @@ footer .footer-container .footer-info {
   align-items: inherit;
   flex-wrap: inherit;
   width: 100%;
+  color: rgb(0, 0, 0);
 }
 @media screen and (max-width: 1126px) {
   footer .footer-container .footer-info {

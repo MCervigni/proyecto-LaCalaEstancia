@@ -31,6 +31,7 @@ footer {
     .footer-info {
       @include flex(column, inherit, inherit, inherit);
       width: 100%;
+      color: rgb(0, 0,0);
       @include tablet {
         font-size: 0.6rem;
         display: block;
